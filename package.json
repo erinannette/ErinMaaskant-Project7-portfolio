@@ -1,24 +1,41 @@
 {
-  "name": "static-boiler",
+  "name": "project7",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.0.1",
-    "@babel/preset-env": "^7.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babelify": "^10.0.0",
     "browser-sync": "^2.24.7",
     "browserify": "^16.2.2",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-sass": "^4.0.1",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinannette/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Erin Maaskant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinannette/portfolio/issues"
+  },
+  "homepage": "https://github.com/erinannette/portfolio#readme"
 }
