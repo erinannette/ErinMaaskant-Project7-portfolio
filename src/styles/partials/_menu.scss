@@ -81,14 +81,11 @@ input:checked ~ .site--wrapper {
         width: 92%;
         nav {
             width: 100%;
-            ul {
-                display: flex;
-                a {
-                    @include title-styles(18);
-                    color: $blue;
-                    font-weight: 600;
-                    padding: 0 5%;
-                }
+            a {
+                @include title-styles(18);
+                color: $blue;
+                font-weight: 600;
+                padding: 0 5%;
             }
         }
     }
