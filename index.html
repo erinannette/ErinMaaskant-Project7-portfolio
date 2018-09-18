@@ -12,18 +12,18 @@
     <title>Erin Maaskant</title>
 </head>
 <body>
-    <!-- --------------- SLIDER NAV ------------- -->
+    <!-- --- SLIDER NAV -- -->
     <input type="checkbox" id="toggle" name="toggle">
 
     <ul class="nav">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <!-- --------------- SITE WRAPPER ------------- -->
+    <!-- -- SITE WRAPPER -- -->
     <div class="site--wrapper" id="home">
-    <!-- --------------- TOP BAR ------------- -->
+    <!-- -- TOP BAR -- -->
         <section class="top-bar" id="top-bar">
 
             <label for="toggle">
@@ -31,25 +31,23 @@
             </label>
 
             <div class="container--nav">
-                <nav>
-                    <ul class="top-bar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <ul class="top-bar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
 
         </section>
-        <!-- --------------- HERO ------------- -->
+        <!-- -- HERO -- -->
         <section class="hero">
             <div class="container--titles">
                 <h1>Erin Maaskant</h1>
                 <h2 class="h2-white">Front End Developer</h2>
             </div>
         </section>
-<!-- ---------------- -->
+<!-- ---- -->
         <main>
             <section class="about-me" id="about">
                 <div class="wrapper--sides outline--top"></div>
@@ -65,7 +63,7 @@
                 </div>
                 <div class="wrapper--sides outline--bottom"></div>
             </section>
-<!-- ---------------- -->
+<!-- --- -->
             <section class="portfolio" id="portfolio">
                 <div class="content--container__title">
                     <h2>Portfolio</h2>
@@ -249,26 +247,28 @@
                         <p>Send me an email or fill out this form!</p>
                         <a href="mailto:erin_maas@yahoo.com"><i class="fas fa-envelope"></i> hi@erinmaaskant.com</a>
                     </div>
-                    <form action="https://formspree.io/erin_maas@yahoo.com"
-                    method="POST" class="contact--container__right" autocomplete="off" name="write-us">
-                
-                        <label label class="visuallyhidden" for="full-name">Name</label>
-                        <input type="text" class="full-name" name="Full Name" placeholder="Name">
-                
-                        <label label class="visuallyhidden" for="email">Email</label>
-                        <input type="email" class="email" name="_replyto" placeholder="Email">
-                
-                        <label label class="visuallyhidden" for="message">Message</label>
-                        <input type="text" class="message" name="Message" placeholder="Message">
+                    <div class="contact--container__right">
+                        <form action="https://formspree.io/erin_maas@yahoo.com"
+                        method="POST" autocomplete="off" name="write-us">
+                    
+                            <label label class="visuallyhidden" for="full-name">Name</label>
+                            <input type="text" class="full-name" name="Full Name" placeholder="Name">
+                    
+                            <label label class="visuallyhidden" for="email">Email</label>
+                            <input type="email" class="email" name="_replyto" placeholder="Email">
+                    
+                            <label label class="visuallyhidden" for="message">Message</label>
+                            <input type="text" class="message" name="Message" placeholder="Message">
 
-                        <input type="text" class="hidden" name="_gotcha"/>
-                        <input type="hidden" class="hidden" name="_subject" value="New submission!"/>
-                
-                        <label class="visuallyhidden" for="submit">Submit</label>
-                        <input type="submit" class="submit" name="Submit" value="Drop me a line"
-                        placeholder="Submit">
-                
-                    </form>
+                            <input type="text" class="hidden" name="_gotcha"/>
+                            <input type="hidden" class="hidden" name="_subject" value="New submission!"/>
+                    
+                            <label class="visuallyhidden" for="submit">Submit</label>
+                            <input type="submit" class="submit" name="Submit" value="Drop me a line"
+                            placeholder="Submit">
+                    
+                        </form>
+                    </div>
                 </div>
 
             </section>
