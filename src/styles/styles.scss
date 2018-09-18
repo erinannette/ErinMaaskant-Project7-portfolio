@@ -17,6 +17,9 @@ img {
     width: 100%;
     display: block;
 }
+a {
+    text-decoration: none;
+}
 .site--wrapper {
     max-width: 1600px;
     width: 100%;
@@ -25,7 +28,14 @@ img {
 .content--container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+}
+.content--container.full {
+    width: 100%;
+}
+.content--container.border {
+    border: 1px solid $mdblue;
+    box-shadow: 1px 1px 3px $ltblue;
 }
 .content--container.reverse {
     display: flex;
@@ -55,21 +65,45 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .content--container__text.edges {
-    padding-left: 5%;
+    padding-left: 5%; 
+    border-top: 1px solid $mdblue;
+}
+// BUTTON
+.content--container__button {
+    display: flex;
+    flex-direction: row;
+    .view-site, .github {
+        width: 200px;
+        margin: 10px 20px 5px 0;
+        padding: 10px 5px;
+        border: 1px solid $mdblue;
+        background-color: white;
+        box-shadow: 1px 1px 4px $mdblue;
+        @include title-styles(16);
+        color: $mdblue;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: white;
+            background-color: $mdblue;
+            border: 1px solid $blue;
+        }
+    }
 }
 // IMAGES
 .content--container__image {
     width: 50%;
 }
 .content--container__image.small {
-    background-color: $ltblue;
     height: 60vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid $mdblue;
     img {
         width: 75%;
         position: absolute;
@@ -85,6 +119,8 @@ img {
         background: rgba(241, 243, 243, 0.8);
     }
 }
+
+
 // ----- HEADER -----
 header {
     height: 100vh;
@@ -119,6 +155,7 @@ h1, .h2-white {
                 padding: 0 18px;
                 border-top: 1px solid $blue;
                 border-bottom: 1px solid $blue;
+                transition: all 0.3s ease-in-out;
                 &:hover {
                     border-top: 1px solid $mdblue;
                     border-bottom: 1px solid $mdblue;
@@ -173,6 +210,9 @@ h1, .h2-white {
     display: flex;
     flex-direction: column;
 }
+.portfolio-skills {
+    width: 100%;
+}
 // ----- TOOLS -----
 .icons-list {
     width: 100%;
@@ -183,32 +223,156 @@ h1, .h2-white {
         font-size: 55px;
         padding-right: 10px;
         color: $blue;
-    }
-    .jquery {
-        width: 5%;
+        text-shadow: 1px 1px 3px $mdblue;
     }
 }
-.icons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 0;
-    .gulp, .firebase,
-    .photoshop, .illustrator {
-        width: 5%;
-    }
-    i {
-        font-size: 55px;
-        padding-right: 10px;
+.icons-list.spacing {
+    margin: 60px 0;
+}
+#html {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -5px;
+        content: "HTML5";
+        @include title-styles(16);
+        font-weight: 600;
         color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#css {
+    position: relative;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -1px;
+        content: "CSS3";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#sass {
+    position: relative;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -5px;
+        content: "SASS";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#jquery {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -5px;
+        content: "jQuery";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#js {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -25px;
+        content: "JavaScript";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#react {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: 1px;
+        content: "React";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#gulp {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: 2px;
+        content: "Gulp";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#mobile {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -40px;
+        left: -35px;
+        content: "Responsive Design";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px white;
+    }
+}
+#ps {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -25px;
+        content: "Photoshop";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
+    }
+}
+#il {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover::after {
+        position: absolute;
+        top: -20px;
+        left: -25px;
+        content: "Illustrator";
+        @include title-styles(16);
+        font-weight: 600;
+        color: $blue;
+        text-shadow: 1px 1px 2px $ltblue;
     }
 }
 // ----- BLOG -----
-.content--container__blog {
-    width: 30%;
-    height: 200px;
-    background-color: $blue;
-}
+// .content--container__blog {
+//     width: 30%;
+//     height: 200px;
+//     background-color: $blue;
+// }
 // ----- CONTACT -----
 
 .contact--container__form {
@@ -228,12 +392,13 @@ h1, .h2-white {
         }
         a {
             text-decoration: none;
-            color: $blue;
+            color: $mdblue;
             @include paragraph-styles(16);
             font-weight: 400;
         }
         i {
             padding-left: 5px;
+            color: $mdblue;
         }
     }
     form {
@@ -259,6 +424,9 @@ h1, .h2-white {
             padding: 1% 1% 8%;
             @include paragraph-styles(15);
         }
+        .hidden {
+            display: none;
+        }
         .submit {
             margin: 5px auto 0;
             padding: 10px;
@@ -266,6 +434,13 @@ h1, .h2-white {
             border: 1px solid white;
             @include title-styles(15);
             color: $mdgrey;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: $mdblue;
+                border: 1px solid $blue;
+                color: white;
+                // text-shadow: 1px 1px 3px $blue;
+            }
         }
     }
 }
@@ -290,9 +465,17 @@ footer {
                 border-left: 1px solid $mdgrey;
                 margin: 0 auto 10px;
                 padding: 8px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $blue;
+                }
                 .footer--icon {
                     color: $mdgrey;
                     font-size: 30px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
             .footer--container__icon.right {

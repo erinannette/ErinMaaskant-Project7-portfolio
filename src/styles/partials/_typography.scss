@@ -40,6 +40,7 @@ h1 {
 }
 h2 {
     @include title-styles (35);
+    text-shadow: 1px 1px 3px $mdblue;
 }
 .h2-white {
     color: white;
