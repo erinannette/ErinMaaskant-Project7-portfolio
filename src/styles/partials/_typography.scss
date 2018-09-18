@@ -47,7 +47,6 @@ h2 {
     text-align: center;
     padding: 10px 0;
     letter-spacing: 2px;
-    text-transform: capitalize;
     border-top: 0.5px solid $ltgrey;
     border-bottom: 0.5px solid $ltgrey;
     text-shadow: 1px 1px 10px $dkgrey;
@@ -71,8 +70,6 @@ ul, li {
 .nav-list {
     li {
         @include title-styles(18);
-        color: $mdblue;
-        text-shadow: 1px 1px 10px $dkgrey;
     }
 }
 .list-items__uppercase {
