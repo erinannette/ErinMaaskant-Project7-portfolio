@@ -1,17 +1,19 @@
 // ---------- SLIDE IN MENU -----------
 .nav {
-	position: fixed;
+    position: fixed;
     left: -200px;
 	top: 0;
 	bottom: 0;
 	list-style: none;
 	background: $mdblue;
-	width: 200px;
+    width: 200px;
+    height: 275px;
 	margin: 0;
     padding-top: 20px;
 	line-height: 15px;
 	transition: all 0.5s;
-	border-right: 1px solid $blue;
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
 	z-index: 20;
     li {
         width: 100%;
@@ -44,7 +46,7 @@
 #toggle:checked + .nav {
 	left: 0;
 }
-input:checked ~ .site--wrapper {
+input:checked {
 	left: 200px;
 }
 #toggle {
@@ -57,7 +59,8 @@ input:checked ~ .site--wrapper {
 	height: 40px;
 	position: fixed;
 	top: 0px;
-	left: 0px;
+    left: 0px;
+    border-bottom: 1px solid $blue;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -76,6 +79,7 @@ input:checked ~ .site--wrapper {
 	.fa-bars {	
         width: 5%;
         color: $blue;
+        display: none;
     }
 	.container--nav {	
         display: block;
@@ -101,7 +105,7 @@ input:checked ~ .site--wrapper {
 
 // HERO
 .hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url(../assets/hero.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url(../assets/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -117,8 +121,13 @@ input:checked ~ .site--wrapper {
 }
 
 // ------ RESPONSIVENESS ------
-@media (max-width: 550px) {
-    .top-bar .container--nav {
-        display: none;
+@media (max-width: 770px) {
+    .top-bar {
+            .container--nav {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+        }
     }
 }

@@ -16,7 +16,7 @@ $ltgrey: #e3e8e8;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $dkgrey;
+    color: $blue;
 }
 @mixin paragraph-styles($sizeValue) {
     font-size: $sizeValue * 1px;
@@ -34,22 +34,23 @@ body {
 }
 h1 {
     @include title-styles (60);
-    color: white;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 10px $dkgrey;
+    text-shadow: 1px 1px 5px $mdgrey;
 }
 h2 {
     @include title-styles (35);
     text-shadow: 1px 1px 3px $mdblue;
 }
-.h2-white {
-    color: white;
+.h2--hero {
+    color: $blue;
+    font-size: 40px;
     text-align: center;
-    padding: 10px 0;
+    text-transform: uppercase;
+    padding: 5px 0 10px 0;
     letter-spacing: 2px;
-    border-top: 0.5px solid $ltgrey;
-    border-bottom: 0.5px solid $ltgrey;
-    text-shadow: 1px 1px 10px $dkgrey;
+    border-top: 0.5px solid $mdgrey;
+    border-bottom: 0.5px solid $mdgrey;
+    text-shadow: 1px 1px 5px $mdgrey;
 }
 h3 {
     @include title-styles (25);
@@ -75,13 +76,16 @@ ul, li {
 .list-items__uppercase {
     @include title-styles (16);
     text-transform: uppercase;
-    color: $mdblue;
-    padding: 3% 3% 3% 0;
+    color: $blue;
+    padding: 3% 0;
 }
 p {
     @include paragraph-styles (17);
 }
-// ------------TEXT ADJUSTMENTS---------------
+.white {
+    color: white;
+}
+// --TEXT ADJUSTMENTS--
 .text--paragraph__left {
     padding-right: 5%;
 }
@@ -93,4 +97,28 @@ p {
 }
 .text--paragraph__spacing {
     padding: 10px 70px;
+}
+
+// --RESPONSIVENESS--
+@media (max-width: 600px) {
+    h1 {
+        @include title-styles (45);
+    }
+    h2 {
+        @include title-styles (30);
+    }
+    .h2--hero {
+        font-size: 28px;
+    }
+    .text--paragraph__right {
+        padding-right: 5%;
+    }
+    .text--paragraph__spacing {
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 550px) {
+    .list-items__uppercase {
+        padding: 2% 4%;
+    }
 }
