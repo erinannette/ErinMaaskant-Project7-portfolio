@@ -27,7 +27,12 @@
         <section class="top-bar" id="top-bar">
 
             <label for="toggle">
-                <i class="fa fa-bars"></i>
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </label>
 
             <div class="container--nav">
@@ -41,7 +46,7 @@
 
         </section>
         <!-- -- HERO -- -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="container--titles">
                 <h1>Erin Maaskant</h1>
                 <h2 class="h2--hero">Front End Developer</h2>
@@ -319,10 +324,14 @@
         </footer>
 <!-- ---------------- -->
     </div>
-    <script src="public/scripts/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="public/scripts/app.js"></script>
     <script>
-        
+        $(document).ready(function () {
+            $('#nav-icon').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
     </script>
 </body>
 </html>
