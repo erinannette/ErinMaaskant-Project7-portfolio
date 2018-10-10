@@ -53,8 +53,10 @@ a {
     width: 90%;
     height: 50px;
     border: 1px solid $ltgrey;
-    text-align: center;
     margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content--container__title.tight {
     margin: 50px auto 0;
@@ -71,10 +73,20 @@ a {
     padding-left: 5%; 
     border-top: 1px solid $mdblue;
 }
+.content--container__text.three-edges {
+    padding: 5% 0 5% 5%;
+    border-top: 1px solid $mdblue;
+}
 // BUTTON
 .content--container__button {
     display: flex;
     flex-direction: row;
+}
+.content--container__button-center {
+    margin: 0 auto;
+}
+.content--container__button.top-margin {
+    margin-top: 3%;
 }
 // IMAGES
 .content--container__image {
@@ -89,11 +101,14 @@ a {
     padding: 5% 0;
     a {
         width: 75%;
-        box-shadow: 3px 3px 10px $mdgrey;
-
+        // box-shadow: 3px 3px 10px $mdgrey;
     }
     img {
         width: 100%;
+        box-shadow: 3px 3px 10px $mdgrey;
+    }
+    .right-margin {
+        width: 80%;
     }
 }
 .grow { 
@@ -105,6 +120,7 @@ a {
 // ----- ABOUT ME -----
 .content--container__about {
     width: 65%;
+    padding: 5% 0;
     background-color: $ltblue;
     display: flex;
     flex-direction: column;
@@ -117,9 +133,9 @@ a {
     background-image: url(../assets/profile_pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     min-height: 350px;
-    max-height: 430px;
+    max-height: 460px;
 }
 .content--container__text.blue {
     background-color: $blue;
@@ -155,6 +171,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     color: $blue;
+    padding-right: 10%;
 }
 .view-site {
     margin-right: 3%;
@@ -172,6 +189,23 @@ a {
         color: $blue;
         background-color: white;
         border: 1px solid $mdblue;
+    }
+}
+.prior.portfolio {
+    width: 100%;
+    .container--back {
+        padding-left: 5%;
+        margin-bottom: 1%;
+        .button--back {
+            @include title-styles (16);
+            text-transform: uppercase;
+            color: $blue;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $mdblue;
+                text-shadow: 1px 1px 3px $ltgrey;
+            }
+        }
     }
 }
 // ----- TOOLS -----
@@ -461,6 +495,10 @@ footer {
             .view-site, .github {
                 width: 145px;
             }
+        }
+        .portfolio--skills {
+            padding-right: 0;
+            justify-content: space-between;
         }
     }
     .content--container__text.edges {

@@ -55,6 +55,9 @@ h2 {
 h3 {
     @include title-styles (25);
 }
+.h3--left {
+    text-align: left;
+}
 h4 {
     @include title-styles (20);
     text-align: left;
@@ -92,6 +95,9 @@ p {
 .text--paragraph__right {
     padding-right: 10%;
 }
+.text--paragraph__bottom {
+    padding-bottom: 5%;
+}
 .text--paragraph__white {
     color: white;
 }
@@ -119,6 +125,6 @@ p {
 }
 @media (max-width: 550px) {
     .list-items__uppercase {
-        padding: 2% 4%;
+        padding: 2% 0;
     }
 }
