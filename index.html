@@ -14,45 +14,47 @@
 </head>
 <body>
     <!-- --- SLIDER NAV -- -->
-    <input type="checkbox" id="toggle" name="toggle">
+    <header>
+        <input type="checkbox" id="toggle" name="toggle">
 
-    <ul class="nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <!-- -- SITE WRAPPER -- -->
-    <div class="site--wrapper" id="home">
-    <!-- -- TOP BAR -- -->
-        <section class="top-bar" id="top-bar">
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- -- SITE WRAPPER -- -->
+        <div class="site--wrapper" id="home">
+        <!-- -- TOP BAR -- -->
+            <section class="top-bar" id="top-bar">
 
-            <label for="toggle">
-                <div id="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <label for="toggle">
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+
+                <nav class="container--nav">
+                    <ul class="top-bar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+            <!-- -- HERO -- -->
+            <section class="hero" id="home">
+                <div class="container--titles">
+                    <h1>Erin Maaskant</h1>
+                    <h2 class="h2--hero">Front End Developer</h2>
                 </div>
-            </label>
-
-            <nav class="container--nav">
-                <ul class="top-bar-nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-        </section>
-        <!-- -- HERO -- -->
-        <section class="hero" id="home">
-            <div class="container--titles">
-                <h1>Erin Maaskant</h1>
-                <h2 class="h2--hero">Front End Developer</h2>
-            </div>
-        </section>
+            </section>
+        </header>
 <!-- ---- -->
         <main>
             <section class="about-me" id="about">
@@ -74,61 +76,72 @@
                 <div class="content--container__title">
                     <h2>Portfolio</h2>
                 </div>
-                <!-- PREVIOUS EXPERIENCE - LINK TO SEPARATE PAGE -->
-                <div class="content--container reverse">
-                    <div class="content--container__text edges">
-                        <h4>Other Skills and Talents</h4>
-                        <p class="text--paragraph__right">
-                            Before diving into the world of front-end web development, I had a lot of fun working in the Communications field. A few of the hats I wore were writer and editor, campaign creator, and project manager. Click below to take a closer look.
-                        </p>
-                        <div class="content--container__button top-margin">
-                            <a href="portfolio.html" class="view-site white">Past Projects</a>
-                        </div>
-                    </div>
-                    <div class="content--container__image small">
-                        <a href="portfolio.html" class="grow">
-                            <img src="../public/assets/portfolio_priorexperience.jpg" alt="image of Siemens and Mondelez pension statements and Kraft employee newsletter">
-                        </a>
-                    </div>
+                <div>
+                    <h3>Front End Development</h3>
                 </div>
+
                 <!-- PORTFOLIO ITEM 1 -->
                 <div class="content--container">
                     <div class="content--container__text edges">
-                        <h4>jQuery and Javascript</h4>
+                        <h4>Portfolio Website</h4>
                         <p class="text--paragraph__left">
-                            What Kinda Cuppa Joe Are You is a lighthearted interactive questionnaire for finding out what type of coffee your personality is the most closely aligned with.
+                            For this project, I was hired to migrate the content from a WordPress site to a new layout. I created this original design in Photoshop, and incorporated simple JavaScript to improve the user experience and make the content easy to read on a mobile device.
                         </p>
                         <ul class="portfolio--skills">
                             <li class="list-items__uppercase">
+                                Layout & UX</li>
+                            <li class="list-items__uppercase">
+                                Responsive Design</li>
+                            <li class="list-items__uppercase">
                                 Javascript</li>
-                            <li class="list-items__uppercase">
-                                React</li>
-                            <li class="list-items__uppercase">
-                                Firebase</li>
                         </ul>
                         <div class="content--container__button white">
-                            <a href="https://erinannette.github.io/ErinMaaskant-Project3/" class="view-site white" target=_blank>View Site</a>
-                            <a href="https://github.com/erinannette/ErinMaaskant-Project3" class="github white" target=_blank>Github Repo</a>
+                            <a href="https://erinannette.github.io/Bri-Brown-Portfolio/index.html" class="view-site white" target=_blank>View Site</a>
                         </div>
                     </div>
                     <div class="content--container__image small">
-                        <a href="https://erinannette.github.io/ErinMaaskant-Project3/" class="grow" target=_blank><img src="../public/assets/portfolio_4.jpg" alt="screen capture of JavaScript app named What kinda cuppa joe are you"></a>
+                        <a href="https://erinannette.github.io/Bri-Brown-Portfolio/index.html" class="grow" target=_blank><img src="../public/assets/portfolio_bribrown.jpg" alt="screen capture of Briana Brown's portfolio website"></a>
                     </div>
                 </div>
                 <!-- PORTFOLIO ITEM 2 -->
                 <div class="content--container reverse">
                     <div class="content--container__text edges">
-                        <h4>React Interactive Project</h4>
+                        <h4>jQuery and Javascript</h4>
                         <p class="text--paragraph__right">
-                            Developed as a tool for collecting and analyzing data and ultimately improving cycling infrastructure, CycleWatch provides a form for users to complete on the details of their cycling incident. That data is stored in Firebase and sorted for statistics and findings.
+                            What Kinda Cuppa Joe Are You is a lighthearted interactive questionnaire for finding out what type of coffee your
+                            personality is the most closely aligned with.
                         </p>
                         <ul class="portfolio--skills">
                             <li class="list-items__uppercase">
-                                Javascript</li>
+                                HTML5</li>
                             <li class="list-items__uppercase">
-                                React</li>
+                                SCSS</li>
                             <li class="list-items__uppercase">
-                                Firebase</li>
+                                JavaScript</li>
+                        </ul>
+                        <div class="content--container__button">
+                            <a href="https://erinannette.github.io/ErinMaaskant-Project3/" class="view-site white" target=_blank>View Site</a>
+                            <a href="https://github.com/erinannette/ErinMaaskant-Project3" class="github white" target=_blank>Github Repo</a>
+                        </div>
+                    </div>
+                    <div class="content--container__image small">
+                        <a href="https://erinannette.github.io/ErinMaaskant-Project3/" class="grow" target=_blank><img src="../public/assets/portfolio_coffeequiz.jpg"
+                                alt="screen capture of JavaScript app named What kinda cuppa joe are you"></a>
+                    </div>
+                </div>
+                <!-- PORTFOLIO ITEM 3 -->
+                <div class="content--container">
+                    <div class="content--container__text edges">
+                        <h4>React Interactive Project</h4>
+                        <p class="text--paragraph__left">
+                            Developed as a tool for collecting and analyzing data and ultimately improving cycling infrastructure, CycleWatch
+                            provides a form for users to complete on the details of their cycling incident. That data is stored in Firebase and
+                            sorted for statistics and findings.
+                        </p>
+                        <ul class="portfolio--skills">
+                            <li class="list-items__uppercase">Javascript</li>
+                            <li class="list-items__uppercase">React</li>
+                            <li class="list-items__uppercase">Firebase</li>
                         </ul>
                         <div class="content--container__button">
                             <a href="https://project5-c80cf.firebaseapp.com/" class="view-site white" target=_blank>View Site</a>
@@ -137,32 +150,7 @@
                     </div>
                     <div class="content--container__image small">
                         <a href="https://project5-c80cf.firebaseapp.com/" class="grow" target=_blank>
-                            <img src="../public/assets/portfolio_2.jpg" alt="screen capture of React app named CycleWatch">
-                        </a>
-                    </div>
-                </div>
-                <!-- PORTFOLIO ITEM 3 -->
-                <div class="content--container">
-                    <div class="content--container__text edges">
-                        <h4>React Interactive Project</h4>
-                        <p class="text--paragraph__left">
-                            Designed for a mock client following a creative brief and branding guidelines, Beer Bible allows users to log in to the site, search for beer brewing recipes, and save their favourite search results to their own beer bible. They are also able to save notes specific to each recipe, and find food pairings appropriate to
-                            that beer.
-                        </p>
-                        <ul class="portfolio--skills">
-                            <li class="list-items__uppercase">Javascript</li>
-                            <li class="list-items__uppercase">React</li>
-                            <li class="list-items__uppercase">Firebase</li>
-                            <li class="list-items__uppercase">API</li>
-                        </ul>
-                        <div class="content--container__button">
-                            <a href="https://beer-bible-553e1.firebaseapp.com" class="view-site" target=_blank>View Site</a>
-                            <a href="https://github.com/beer-bible/beer-bible" class="github" target=_blank>Github Repo</a>
-                        </div>
-                    </div>
-                    <div class="content--container__image small">
-                        <a href="https://beer-bible-553e1.firebaseapp.com" class="grow" target=_blank>
-                            <img src="../public/assets/portfolio_1.jpg" alt="screen capture of React app named Beer Bible">
+                            <img src="../public/assets/portfolio_cyclewatch.jpg" alt="screen capture of React app named CycleWatch">
                         </a>
                     </div>
                 </div>
@@ -191,7 +179,7 @@
                     </div>
                     <div class="content--container__image small">
                         <a href="https://erinannette.github.io/jessica-huynh-erin-maaskant-project4/" class="grow" target=_blank>
-                            <img src="../public/assets/portfolio_3.jpg" alt="screen capture of JavaScript app for online game Overwatch">
+                            <img src="../public/assets/portfolio_overwatch.jpg" alt="screen capture of JavaScript app for online game Overwatch">
                         </a>
                     </div>
                 </div>
@@ -206,7 +194,7 @@
                             <li class="list-items__uppercase">
                                 HTML</li>
                             <li class="list-items__uppercase">
-                                CSS/SASS</li>
+                                SCSS</li>
                             <li class="list-items__uppercase">
                                 Responsive Design</li>
                         </ul>
@@ -217,7 +205,30 @@
                     </div>
                     <div class="content--container__image small">
                         <a href="https://erinannette.github.io/ErinMaaskant-ProjectTwo/" class="grow" target=_blank>
-                            <img src="../public/assets/portfolio_5.jpg" alt="screen capture of PSD to website conversion project">
+                            <img src="../public/assets/portfolio_psd-conv.jpg" alt="screen capture of PSD to website conversion project">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3>Communications & Marketing</h3>
+                </div>
+                <!-- PREVIOUS EXPERIENCE - LINK TO SEPARATE PAGE -->
+                <div class="content--container reverse">
+                    <div class="content--container__text edges">
+                        <p class="text--paragraph__right">
+                            Before diving into the world of front-end web development, I had a lot of fun working in the Communications
+                            and Marketing field. A few of the hats I wore were writer and editor, campaign creator, and project manager. Click below
+                            to take a closer look.
+                        </p>
+                        <div class="content--container__button top-margin">
+                            <a href="portfolio.html" class="view-site white">Past Projects</a>
+                        </div>
+                    </div>
+                    <div class="content--container__image small">
+                        <a href="portfolio.html" class="grow">
+                            <img src="../public/assets/portfolio_comms.jpg" alt="image of Siemens and Mondelez pension statements and Kraft employee newsletter">
                         </a>
                     </div>
                 </div>
@@ -313,7 +324,7 @@
             </div>
             
             <div class="footer--container">
-                <h5 class="text--paragraph__small">Site by Erin Maaskant, photography by Victoria Chan</h5>
+                <h5 class="text--paragraph__small">Portrait by Victoria Chan. Hero by Ishan @seefromthesky on Unsplash</h5>
             </div>
         </footer>
 <!-- ---------------- -->

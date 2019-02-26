@@ -37,7 +37,7 @@ h1 {
     letter-spacing: 2px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
-h2 {
+h2, h3 {
     @include title-styles (35);
     text-shadow: 1px 1px 3px $mdblue;
 }
