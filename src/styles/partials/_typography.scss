@@ -123,7 +123,7 @@ p {
 // --RESPONSIVENESS--
 @media (max-width: 600px) {
     h1 {
-        @include title-styles (45);
+        @include hero-styles (45);
     }
     h2 {
         @include title-styles (30);

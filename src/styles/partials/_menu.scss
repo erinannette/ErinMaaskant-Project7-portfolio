@@ -195,6 +195,14 @@ input:checked {
 
 // ------ RESPONSIVENESS ------
 @media (max-width: 770px) {
+    .hero {
+        height: 60vh;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        height: 45vh;
+    }
     .top-bar {
         .container--nav {
             display: none;
@@ -202,5 +210,15 @@ input:checked {
         #nav-icon {
             display: block;
         }
+    }
+}
+@media (max-width: 500px) {
+    .hero {
+        height: 30vh;
+    }
+}
+@media (max-width: 333px) {
+    .hero {
+        height: 35vh;
     }
 }
