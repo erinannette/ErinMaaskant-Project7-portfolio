@@ -18,7 +18,7 @@
     li {
         width: 100%;
         a {
-            @include title-styles(22);
+            @include title-styles(24);
             text-align: left;
             color: $blue;
             text-decoration: none;
@@ -164,7 +164,7 @@ input:checked {
             li {
                 // padding: 0 15px;
                 a {
-                    @include title-styles(18);
+                    @include title-styles(21);
                     transition: all 0.3s ease-in-out;
                     padding: 0 5%;
                     &:hover {

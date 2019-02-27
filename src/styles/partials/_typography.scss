@@ -1,9 +1,6 @@
-$basefont1: 'Nunito', sans-serif;
+$basefont1: 'Unica One', sans-serif;
 $basefont2: 'Source Sans Pro', sans-serif;
-
-$herofont1: 'Syncopate', sans-serif;
-$herofont2: 'Tenor Sans', sans-serif;
-$herofont3: 'Cabin Sketch', sans-serif;
+$herofont: 'Cabin Sketch', sans-serif;
 
 $blue: #465353;
 $mdblue: #c7d1d1;
@@ -15,7 +12,7 @@ $ltgrey: #e3e8e8;
 @mixin hero-styles($sizeValue) {
     font-size: $sizeValue * 1px;
     font-size: ($sizeValue/10) * 1rem;
-    font-family: $herofont3;
+    font-family: $herofont;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -68,13 +65,13 @@ h2, h3 {
     text-shadow: 1px 1px 5px $mdgrey;
 }
 h3 {
-    @include title-styles (25);
+    @include title-styles (30);
 }
 .h3--left {
     text-align: left;
 }
 h4 {
-    @include title-styles (20);
+    @include title-styles (24);
     text-align: left;
 }
 h5 {
@@ -88,11 +85,11 @@ ul, li {
 }
 .container--nav {
     li {
-        @include title-styles(18);
+        @include title-styles(20);
     }
 }
 .list-items__uppercase {
-    @include title-styles (16);
+    @include title-styles (18);
     text-transform: uppercase;
     color: $blue;
     padding: 3% 0;
