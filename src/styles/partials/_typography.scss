@@ -1,12 +1,26 @@
 $basefont1: 'Nunito', sans-serif;
 $basefont2: 'Source Sans Pro', sans-serif;
 
+$herofont1: 'Syncopate', sans-serif;
+$herofont2: 'Tenor Sans', sans-serif;
+$herofont3: 'Cabin Sketch', sans-serif;
+
 $blue: #465353;
 $mdblue: #c7d1d1;
 $ltblue: #f1f3f3;
 $dkgrey: #222222;
 $mdgrey: #5d5e5d;
 $ltgrey: #e3e8e8;
+
+@mixin hero-styles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $herofont3;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #164c57;
+}
 
 @mixin title-styles($sizeValue) {
     font-size: $sizeValue * 1px;
@@ -33,7 +47,7 @@ body {
     font-size: 1.7rem;
 }
 h1 {
-    @include title-styles (60);
+    @include hero-styles (60);
     letter-spacing: 2px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
@@ -42,14 +56,15 @@ h2, h3 {
     text-shadow: 1px 1px 3px $mdblue;
 }
 .h2--hero {
-    color: $blue;
+    @include hero-styles (35);
+    color: #164c57;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     padding: 5px 0 10px 0;
     letter-spacing: 2px;
-    border-top: 0.5px solid $mdgrey;
-    border-bottom: 0.5px solid $mdgrey;
+    // border-top: 0.5px solid $mdgrey;
+    // border-bottom: 0.5px solid $mdgrey;
     text-shadow: 1px 1px 5px $mdgrey;
 }
 h3 {
