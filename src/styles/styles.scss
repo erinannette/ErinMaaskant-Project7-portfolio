@@ -31,9 +31,6 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.content--container.full {
-    width: 100%;
-}
 .content--container.border {
     border: 1px solid $mdblue;
     box-shadow: 1px 1px 3px $ltblue;
@@ -217,6 +214,7 @@ a {
         background: linear-gradient( rgba(255,255,255,0.8) 100%, transparent 100%);
         h4 {
             text-shadow: 1px 1px 4px #5d5e5d;
+            text-align: center;
         }
     }
 }
