@@ -21,14 +21,6 @@ a {
     text-decoration: none;
 }
 
-
-.hide-text {
-    display: none;
-}
-.show-text {
-    display: block;
-}
-
 .site--wrapper {
     max-width: 2600px;
     width: 100%;
@@ -80,11 +72,11 @@ a {
 }
 .content--container__text.edges {
     padding-left: 5%; 
-    border-top: 1px solid $mdblue;
+    // border-top: 1px solid $mdblue;
 }
 .content--container__text.three-edges {
     padding: 5% 0 5% 5%;
-    border-top: 1px solid $mdblue;
+    // border-top: 1px solid $mdblue;
 }
 // BUTTON
 .content--container__button {
@@ -106,7 +98,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid $mdblue;
+    // border-top: 1px solid $mdblue;
     padding: 5% 0;
     a {
         width: 75%;
@@ -201,7 +193,7 @@ a {
     }
 }
 // ----- PORTFOLIO - COMMS -----
-.button--comms {
+.button--comms, .button--fed {
     width: 32%;
     position: relative;
     margin: 5% 0;
@@ -228,6 +220,13 @@ a {
         }
     }
 }
+.button--fed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 18%;
+}
 .active {
     background: linear-gradient( rgba(255,255,255,0.5) 100%, transparent 100%);
     color: white;
@@ -235,7 +234,7 @@ a {
 .collapsible {
     width: 90%;
     margin: 3px auto;
-    padding: 18px;
+    padding: 12px;
     cursor: pointer;
     background-color: white;
     border: 1px solid $ltgrey;
@@ -462,6 +461,13 @@ a {
 //         text-shadow: 1px 1px 2px $ltblue;
 //     }
 // }
+
+.hide-text {
+    display: none;
+}
+.show-text {
+    display: block;
+}
 // ----- CONTACT -----
 .contact--container__form {
     width: 100%;
@@ -624,6 +630,29 @@ footer {
         }
     }
 }
+
+@media (max-width: 850px) {
+    // COMMS SECTION - PORTFOLIO 
+    .content {
+        .content--comms__text {
+            width: 100%;
+            .text--paragraph__bottom {
+                padding-bottom: 2%;
+            }
+            .content--container__button {
+                margin: 0 auto;
+            }
+        }
+        .content--comms__image {
+            width: 70%;
+            margin: 0 auto;
+            .noshow {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 770px) {
     // ABOUT
     .content--container__about,
@@ -631,6 +660,7 @@ footer {
         width: 100%;
         padding: 5% 0;
     }
+    
     // CONTACT
     .contact--container__form .contact--container__left,
     .contact--container__form .contact--container__right {
@@ -639,6 +669,16 @@ footer {
     }
     .contact--container__form .contact--container__left {
         align-items: center;
+    }
+    .button--comms {
+        .overlay h4 {
+            display: none;
+        }
+    }
+    .button--fed {
+        .overlay h4 {
+            display: none;
+        }
     }
 }
 @media (max-width: 550px) {
@@ -660,16 +700,20 @@ footer {
     .portfolio--skills {
         justify-content: center;
     }
-    .button--comms {
+    .button--comms, .button--fed {
         width: 90%;
-
         margin: 0 auto;
         img {
             display: none;
         }
         .overlay {
+            width: 90%;
             position: relative;
-            margin-top: 2px;
+            margin-top: 4px;
+            padding: 5px 0;
+            h4 {
+                display: block;
+            }
         }
     }
 }

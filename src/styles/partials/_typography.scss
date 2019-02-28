@@ -72,6 +72,7 @@ h3 {
 }
 h4 {
     @include title-styles (24);
+    text-transform: lowercase;
     text-align: left;
 }
 h5 {
@@ -110,8 +111,11 @@ p {
 .text--paragraph__bottom {
     padding-bottom: 5%;
 }
+.text--paragraph__top {
+    padding-top: 5%;
+}
 .text--paragraph__comms {
-    padding: 0 5% 4% 5%;
+    padding: 0 5% 2% 5%;
 }
 .text--paragraph__white {
     color: white;
@@ -121,6 +125,11 @@ p {
 }
 
 // --RESPONSIVENESS--
+@media (max-width: 550px) {
+    .text--paragraph__comms {
+        padding: 5% 5% 4% 5%;
+    }
+}
 @media (max-width: 600px) {
     h1 {
         @include hero-styles (45);
