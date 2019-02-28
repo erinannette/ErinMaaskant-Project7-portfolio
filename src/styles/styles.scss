@@ -20,6 +20,15 @@ img {
 a {
     text-decoration: none;
 }
+
+
+.hide-text {
+    display: none;
+}
+.show-text {
+    display: block;
+}
+
 .site--wrapper {
     max-width: 2600px;
     width: 100%;
@@ -191,23 +200,113 @@ a {
         border: 1px solid $mdblue;
     }
 }
-.prior.portfolio {
-    width: 100%;
-    .container--back {
-        padding-left: 5%;
-        margin-bottom: 1%;
-        .button--back {
-            @include title-styles (16);
-            text-transform: uppercase;
-            color: $blue;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-                color: $mdblue;
-                text-shadow: 1px 1px 3px $ltgrey;
-            }
+// ----- PORTFOLIO - COMMS -----
+.button--comms {
+    width: 32%;
+    position: relative;
+    margin: 5% 0;
+    img {
+        width: 100%;
+        // box-shadow: 1px 1px 4px #5d5e5d;
+        // margin-bottom: 15px;
+    }
+    .overlay {
+        border: 1px solid $mdblue;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient( rgba(255,255,255,0.8) 100%, transparent 100%);
+        h4 {
+            text-shadow: 1px 1px 4px #5d5e5d;
         }
     }
 }
+.active {
+    background: linear-gradient( rgba(255,255,255,0.5) 100%, transparent 100%);
+    color: white;
+}
+.collapsible {
+    width: 90%;
+    margin: 3px auto;
+    padding: 18px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid $ltgrey;
+    color: $dkgrey;
+    text-align: center;
+    outline: none;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+        border: 1px solid $mdgrey;
+        transition: all 0.2s ease-in-out;
+    }
+}
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // WITH ANIMATED COLLAPSE
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    .content--comms__text {
+        width: 50%;
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content--comms__image {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5% 0;
+        a {
+            width: 75%;
+            // box-shadow: 3px 3px 10px $mdgrey;
+        }
+        img {
+            width: 100%;
+            box-shadow: 3px 3px 10px $mdgrey;
+        }
+        .right-margin {
+            width: 80%;
+        }
+    }
+}
+.active-coll {
+    border: 1px solid $mdgrey;
+    color: white;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode + */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active-coll:after {
+  content: "\2796"; /* Unicode - */
+}
+
 // ----- TOOLS -----
 .icons--list {
     width: 100%;
@@ -560,6 +659,18 @@ footer {
     }
     .portfolio--skills {
         justify-content: center;
+    }
+    .button--comms {
+        width: 90%;
+
+        margin: 0 auto;
+        img {
+            display: none;
+        }
+        .overlay {
+            position: relative;
+            margin-top: 2px;
+        }
     }
 }
 @media (max-width: 400px) {
