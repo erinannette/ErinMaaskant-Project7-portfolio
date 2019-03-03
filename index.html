@@ -63,14 +63,14 @@
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="60 60 525 270" style="enable-background:new 60 60 525 270;"
                         xml:space="preserve">
                         <style type="text/css">
-                            .st0 { fill: #6D6E70; }
-                            .st1 { fill: #A6A8AB; }
-                            .st2 { fill: #929497; }
-                            .st3 { fill: #0F363D; }
+                            .st0 { fill: #b79fad; }
+                            .st1 { fill: #556f7a; }
+                            .st2 { fill: #754e65; }
+                            .st3 { fill: #798086; }
                             .st4 { fill: #164C57; }
                             .st5 { fill: #BCF0F7; }
-                            .st6 { fill: #F73950; }
-                            .st7 { fill: #F2774A; }
+                            .st6 { fill: #d4afcd; }
+                            .st7 { fill: #d2d6ef; }
                         </style>
                         <switch>
                             <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
@@ -6994,7 +6994,7 @@
                                 }
 
                                 .orange {
-                                    fill: #F2774A;
+                                    fill: #754e65;
                                 }
                             </style>
                             <switch>
@@ -12464,11 +12464,11 @@
                                 }
 
                                 .red {
-                                    fill: #F73950;
+                                    fill: #d4afcd;
                                 }
 
                                 .orange {
-                                    fill: #F2774A;
+                                    fill: #754e65;
                                 }
                             </style>
                             <switch>
@@ -17979,123 +17979,5 @@
 
     <script src="public/scripts/app.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('#nav-icon').click(function () {
-                $(this).toggleClass('open');
-            });
-        });
-    </script>
-
-    <script>
-    // ACTIVE BUTTON IN PORTFOLIO FRONT END DEV SECTION
-    // const button = document.getElementsByClassName("button--fed");
-    // let i;
-
-    // for (i = 0; i < button.length; i++) {
-    //     button[i].addEventListener("click", function () {
-    //         this.classList.toggle("active");
-    //     });
-    // };
-
-    // FRONT END DEV SECTION - IMAGE BUTTONS
-    $(function () {
-        $('.brown--button').click(function () {
-            $('.cuppajoe--section').hide();
-            $('.cyclewatch--section').hide();
-            $('.overwatch--section').hide();
-            $('.psdconv--section').hide();
-
-            $('.brown--section').show();
-            
-        });
-        $('.cuppajoe--button').click(function () {
-            $('.brown--section').hide();
-            $('.cyclewatch--section').hide();
-            $('.overwatch--section').hide();
-            $('.psdconv--section').hide();
-
-            $('.cuppajoe--section').show();
-        });
-        $('.cyclewatch--button').click(function () {
-            $('.brown--section').hide();
-            $('.cuppajoe--section').hide();
-            $('.overwatch--section').hide();
-            $('.psdconv--section').hide();
-
-            $('.cyclewatch--section').show();
-        });
-        $('.overwatch--button').click(function () {
-            $('.brown--section').hide();
-            $('.cuppajoe--section').hide();
-            $('.cyclewatch--section').hide();
-            $('.psdconv--section').hide();
-
-            $('.overwatch--section').show();
-        });
-        $('.psdconv--button').click(function () {
-            $('.brown--section').hide();
-            $('.cuppajoe--section').hide();
-            $('.cyclewatch--section').hide();
-            $('.overwatch--section').hide();
-
-            $('.psdconv--section').show();
-        });
-    });
-
-    // COMMS SECTION - IMAGE BUTTONS
-    $(function () {
-        $('.pubs--button').click(function () {
-            $('.pubs--button').addClass('active');
-            $('.change--button').removeClass('active');
-            $('.trs--button').removeClass('active');
-
-            $('.change--section').hide();
-            $('.trs--section').hide();
-
-            $('.pubs--section').show();
-        });
-        $('.change--button').click(function () {
-            $('.change--button').addClass('active');
-            $('.pubs--button').removeClass('active');
-            $('.trs--button').removeClass('active');
-
-            $('.pubs--section').hide();
-            $('.trs--section').hide();
-
-            $('.change--section').show();
-        });
-        $('.trs--button').click(function () {
-            $('.trs--button').addClass('active');
-            $('.pubs--button').removeClass('active');
-            $('.change--button').removeClass('active');
-
-            $('.pubs--section').hide();
-            $('.change--section').hide();
-
-            $('.trs--section').show();
-        });
-    });
-
-    // COLLAPSIBLE BUTTONS - COMMS SECTION
-    const coll = document.getElementsByClassName("collapsible");
-    let i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-
-            this.classList.toggle("active-coll");
-            let content = this.nextElementSibling;
-
-            // WITH ANIMATED COLLAPSE
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-    
-    </script>
 </body>
 </html>
