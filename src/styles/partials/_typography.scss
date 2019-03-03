@@ -44,8 +44,8 @@ body {
     font-size: 1.7rem;
 }
 h1 {
-    @include hero-styles (60);
-    letter-spacing: 2px;
+    @include hero-styles (70);
+    letter-spacing: 3px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
 h2, h3 {
@@ -58,10 +58,7 @@ h2, h3 {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    letter-spacing: 2px;
-    // border-top: 0.5px solid $mdgrey;
-    // border-bottom: 0.5px solid $mdgrey;
+    letter-spacing: 3px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
 h3 {
@@ -70,10 +67,13 @@ h3 {
 .h3--left {
     text-align: left;
 }
-h4 {
+.h4-upper {
+    @include title-styles (24);
+    text-align: left;
+}
+.h4-lower {
     @include title-styles (24);
     text-transform: lowercase;
-    text-align: left;
 }
 h5 {
     @include paragraph-styles(14);
