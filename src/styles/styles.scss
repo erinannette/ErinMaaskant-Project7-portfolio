@@ -323,144 +323,6 @@ a {
     margin: 60px 0;
     transition: all 0.3s ease-in-out;
 }
-// #html {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -5px;
-//         content: "HTML5";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #css {
-//     position: relative;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -1px;
-//         content: "CSS3";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #sass {
-//     position: relative;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -5px;
-//         content: "SASS";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #jquery {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -5px;
-//         content: "jQuery";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #js {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -25px;
-//         content: "JavaScript";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #react {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: 1px;
-//         content: "React";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #gulp {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: 2px;
-//         content: "Gulp";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #mobile {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -40px;
-//         left: -35px;
-//         content: "Responsive Design";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px white;
-//     }
-// }
-// #ps {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -25px;
-//         content: "Photoshop";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
-// #il {
-//     position: relative;
-//     transition: all 0.3s ease-in-out;
-//     &:hover::after {
-//         position: absolute;
-//         top: -20px;
-//         left: -25px;
-//         content: "Illustrator";
-//         @include title-styles(16);
-//         font-weight: 600;
-//         color: $blue;
-//         text-shadow: 1px 1px 2px $ltblue;
-//     }
-// }
 
 .hide-text {
     display: none;
@@ -513,7 +375,8 @@ a {
             width: calc(50% - 10px);
             margin: 5px;
             padding: 2% 1%;
-            @include paragraph-styles(15);
+            @include paragraph-styles(18);
+            font-weight: 400;
         }
         .message {
             background-color: $ltblue;
@@ -521,7 +384,8 @@ a {
             width: calc(100% - 10px);
             margin: 5px;
             padding: 1% 1% 8%;
-            @include paragraph-styles(15);
+            @include paragraph-styles(18);
+            font-weight: 400;
         }
         .hidden {
             display: none;
@@ -532,7 +396,7 @@ a {
             background-color: $ltblue;
             border: 1px solid white;
             @include title-styles(15);
-            color: $mdgrey;
+            color: $dkgrey;
             transition: all 0.3s ease-in-out;
             &:hover {
                 background-color: $mdblue;
