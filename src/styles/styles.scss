@@ -47,14 +47,20 @@ a {
     flex-wrap: wrap;
 }
 // TITLE
+.title-svg svg {
+    width: 40px;
+    padding-right: 10px;
+}
 .content--container__title {
     width: 90%;
     height: 50px;
     border: 1px solid $ltgrey;
     margin: 50px auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .content--container__title.tight {
     margin: 50px auto 0;
