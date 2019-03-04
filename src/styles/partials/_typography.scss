@@ -125,9 +125,9 @@ p {
 }
 
 // --RESPONSIVENESS--
-@media (max-width: 550px) {
-    .text--paragraph__comms {
-        padding: 5% 5% 4% 5%;
+@media (max-width: 770px) {
+    h1 {
+        @include hero-styles (65);
     }
 }
 @media (max-width: 600px) {
@@ -148,6 +148,9 @@ p {
     }
 }
 @media (max-width: 550px) {
+    .text--paragraph__comms {
+        padding: 5% 5% 4% 5%;
+    }
     .list-items__uppercase {
         padding: 2% 0;
     }

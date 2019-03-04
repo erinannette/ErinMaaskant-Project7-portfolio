@@ -135,7 +135,7 @@ input:checked {
     width: 100%;
     max-width: 2600px;
 	height: 40px;
-	// position: fixed;
+	position: fixed;
 	top: 0px;
     left: 0px;
     border-bottom: 1px solid $blue;
@@ -178,7 +178,7 @@ input:checked {
 
 // HERO
 .hero {
-    
+    padding-top: 40px;
     .geometric-svg img {
        position: relative;
     }
@@ -198,6 +198,10 @@ input:checked {
 @media (max-width: 770px) {
     .hero {
         height: 60vh;
+        .container--titles {
+            top: 45px;
+
+        }
     }
 }
 @media (max-width: 600px) {
