@@ -44,7 +44,7 @@ body {
     font-size: 1.7rem;
 }
 h1 {
-    @include hero-styles (70);
+    @include hero-styles (90);
     letter-spacing: 3px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
@@ -58,7 +58,7 @@ h2, h3 {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     text-shadow: 1px 1px 5px $mdgrey;
 }
 h3 {
