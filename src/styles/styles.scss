@@ -46,6 +46,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
 }
+.content--container.tools {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: stretch;
+}
 // TITLE
 .title-svg svg {
     width: 40px;
@@ -307,21 +313,27 @@ a {
 }
 
 // ----- TOOLS -----
-.icons--list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    i {
-        font-size: 55px;
-        padding-right: 10px;
-        color: $blue;
-        text-shadow: 1px 1px 3px $mdblue;
-    }
+.list.skills {
+    background: url(../assets/tools-pattern-1.svg);
+    
 }
-.icons--list.spacing {
-    margin: 60px 0;
-    transition: all 0.3s ease-in-out;
+.list.tools {
+    background-image: url(../assets/tools-pattern-2.svg);
+}
+.list.skills, .list.tools {
+    width: 40%;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 4px $mdblue;
+}
+.content--container.tools ul li {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 10px 0 0;
+    color: $blue;
+    text-shadow: 1px 1px 3px $mdblue;
 }
 
 .hide-text {
@@ -579,6 +591,11 @@ footer {
                 display: block;
             }
         }
+    }
+    // SKILLS AND TOOLS
+    .list.skills, .list.tools {
+        width: 48%;
+        padding: 3%;
     }
 }
 @media (max-width: 400px) {
