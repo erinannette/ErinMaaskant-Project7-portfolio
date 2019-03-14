@@ -407,7 +407,7 @@ a {
             padding: 10px;
             background-color: $ltblue;
             border: 1px solid white;
-            @include title-styles(15);
+            @include title-styles(20);
             color: $dkgrey;
             transition: all 0.3s ease-in-out;
             &:hover {
@@ -596,6 +596,17 @@ footer {
     .list.skills, .list.tools {
         width: 48%;
         padding: 3%;
+    }
+    // FORM
+    .contact--container__form form {
+        flex-direction: column;
+        .full-name, .email {
+            width: calc(100% - 10px);
+        }
+        .message {
+            width: calc(100% - 10px);
+            padding: 1% 1% 20%;
+        }
     }
 }
 @media (max-width: 400px) {
