@@ -1,9 +1,12 @@
 // PARTIALS
 @import "partials/_setup.scss";
+@import "partials/herosvg.scss";
 @import "partials/_typography.scss";
 @import "partials/_menu.scss";
 
 // ----- GENERAL STYLES -----
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -202,6 +205,11 @@ a {
     }
 }
 // ----- PORTFOLIO - COMMS -----
+.portfolio--comms {
+    h3 {
+        padding-top: 3%;
+    }
+}
 .button--comms, .button--fed {
     width: 32%;
     position: relative;
@@ -231,7 +239,7 @@ a {
     }
 }
 .button--fed {
-    width: 18%;
+    width: 23%;
 }
 .active {
     background: linear-gradient( rgba(255,255,255,0.5) 100%, transparent 100%);
@@ -559,6 +567,11 @@ footer {
 }
 @media (max-width: 550px) {
     // PORTFOLIO
+    .portfolio--comms {
+        h3 {
+            padding-top: 6%;
+        }
+    }
     .content--container__text {
         padding: 5% 0;
         .content--container__button {
@@ -583,7 +596,7 @@ footer {
             display: none;
         }
         .overlay {
-            width: 90%;
+            width: 100%;
             position: relative;
             margin-top: 4px;
             padding: 5px 0;

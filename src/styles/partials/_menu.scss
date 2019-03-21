@@ -186,13 +186,14 @@ input:checked {
     }
     .container--titles {
         position: absolute;
-        top: 60px;
-        bottom: 0;
+        top: 0;
+        bottom: 100px;
         right: 0;
         left: 0;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: right;
+        align-items: flex-end;
     }
     .geometric-svg-mobile {
         display: none;
@@ -200,23 +201,26 @@ input:checked {
 }
 
 // ------ RESPONSIVENESS ------
-@media (max-width: 770px) {
+@media (max-width: 930px) {
     .hero {
-        height: 60vh;
         .container--titles {
-            top: 45px;
-
+           position: absolute;
+            top: 0;
+            bottom: 12px;
+            right: 0;
+            left: 0; 
         }
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .hero {
-        height: 45vh;
-        .geometric-svg {
-            display: none;
-        }
-        .geometric-svg-mobile {
-            display: block;
+        height: 50vh;
+        .container--titles {
+            position: absolute;
+            top: 0;
+            bottom: -70px;
+            right: 0;
+            left: 0; 
         }
     }
     .top-bar {
@@ -228,13 +232,46 @@ input:checked {
         }
     }
 }
+@media (max-width: 670px) {
+    .hero {
+        height: 40vh;
+    }
+}
 @media (max-width: 500px) {
     .hero {
         height: 30vh;
+        
     }
 }
-@media (max-width: 333px) {
+@media (max-width: 425px) {
     .hero {
-        height: 35vh;
+        // height: 28vh;
+        .container--titles {
+            position: absolute;
+            top: 0;
+            bottom: -35px;
+            right: 0;
+            left: 0; 
+            h1 {
+                line-height: 35px;
+                text-align: right;
+            }
+        }
+    }
+}
+@media (max-width: 345px) {
+    .hero {
+        height: 28vh;
+        .container--titles {
+            position: absolute;
+            top: 0;
+            bottom: -30px;
+            right: 0;
+            left: 0; 
+            h1 {
+                line-height: 35px;
+                text-align: right;
+            }
+        }
     }
 }
