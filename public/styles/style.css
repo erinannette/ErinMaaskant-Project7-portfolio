@@ -206,7 +206,8 @@ h1 {
   color: #164c57;
   letter-spacing: 3px;
   text-shadow: 1px 1px 5px #5d5e5d;
-  padding-right: 3%; }
+  padding-right: 3%;
+  text-align: right; }
 
 h2, h3 {
   font-size: 35px;
@@ -238,10 +239,10 @@ h3 {
   font-size: 3rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #465353; }
+  color: #465353;
+  text-align: center; }
 
 .h3--left {
   text-align: left; }
@@ -251,7 +252,6 @@ h3 {
   font-size: 2.4rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #465353;
@@ -262,11 +262,11 @@ h3 {
   font-size: 2.4rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #465353;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  text-align: center; }
 
 h5 {
   font-size: 14px;
@@ -292,21 +292,21 @@ ul, li {
   font-size: 2rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #465353; }
+  color: #465353;
+  text-align: center; }
 
 .list-items__uppercase {
   font-size: 18px;
   font-size: 1.8rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #465353;
   text-transform: uppercase;
+  text-align: center;
   color: #465353;
   padding: 3% 0; }
 
@@ -358,7 +358,6 @@ p {
     font-size: 3rem;
     font-family: "Unica One", sans-serif;
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #465353; }
@@ -408,7 +407,6 @@ p {
       font-size: 2.4rem;
       font-family: "Unica One", sans-serif;
       font-weight: 400;
-      text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: #465353;
@@ -537,7 +535,6 @@ input:checked {
         font-size: 2.1rem;
         font-family: "Unica One", sans-serif;
         font-weight: 400;
-        text-align: center;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: #465353;
@@ -557,8 +554,7 @@ input:checked {
     right: 0;
     left: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: right;
+    flex-direction: row-reverse;
     align-items: flex-end; }
   .hero .geometric-svg-mobile {
     display: none; }
@@ -790,7 +786,6 @@ a {
   font-size: 1.6rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #465353;
@@ -1007,7 +1002,6 @@ a {
       font-size: 2rem;
       font-family: "Unica One", sans-serif;
       font-weight: 400;
-      text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: #465353;

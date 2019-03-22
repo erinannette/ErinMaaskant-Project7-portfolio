@@ -24,7 +24,6 @@ $ltgrey: #e3e8e8;
     font-size: ($sizeValue/10) * 1rem;
     font-family: $basefont1;
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: $blue;
@@ -48,6 +47,7 @@ h1 {
     letter-spacing: 3px;
     text-shadow: 1px 1px 5px $mdgrey;
     padding-right: 3%;
+    text-align: right;
 }
 h2, h3 {
     @include hero-styles (35);
@@ -64,6 +64,7 @@ h2, h3 {
 }
 h3 {
     @include title-styles (30);
+    text-align: center;
 }
 .h3--left {
     text-align: left;
@@ -75,6 +76,7 @@ h3 {
 .h4-lower {
     @include title-styles (24);
     text-transform: lowercase;
+    text-align: center;
 }
 h5 {
     @include paragraph-styles(14);
@@ -88,11 +90,13 @@ ul, li {
 .container--nav {
     li {
         @include title-styles(20);
+        text-align: center;
     }
 }
 .list-items__uppercase {
     @include title-styles (18);
     text-transform: uppercase;
+    text-align: center;
     color: $blue;
     padding: 3% 0;
 }
