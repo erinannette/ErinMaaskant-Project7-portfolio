@@ -304,8 +304,8 @@ h3 {
 }
 
 .h4-lower-left {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 24px;
+  font-size: 2.4rem;
   font-family: "Unica One", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -313,6 +313,18 @@ h3 {
   color: #465353;
   text-transform: lowercase;
   text-align: left;
+}
+
+.h4-lower-left {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #465353;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 h5 {
@@ -1251,10 +1263,14 @@ a {
   width: 75%;
 }
 
-.content .content--comms__image .right-margin {
-  width: 80%;
+.content .content--comms__image img {
+  width: 100%;
   -webkit-box-shadow: 3px 3px 10px #5d5e5d;
   box-shadow: 3px 3px 10px #5d5e5d;
+}
+
+.content .content--comms__image .right-margin {
+  width: 80%;
 }
 
 .active-coll {
@@ -1667,4 +1683,4 @@ footer .footer--container ul .footer--container__img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

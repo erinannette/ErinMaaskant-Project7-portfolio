@@ -96,6 +96,8 @@ a {
     flex-direction: row;
 }
 .content--container__button-center {
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
 }
 .content--container__button.top-margin {
@@ -197,6 +199,7 @@ a {
     border: 1px solid $blue;
     box-shadow: 1px 1px 4px $mdblue;
     color: white;
+    text-align: center;
     transition: all 0.3s ease-in-out;
     &:hover {
         color: $blue;
@@ -296,12 +299,9 @@ a {
             width: 75%;
             // box-shadow: 3px 3px 10px $mdgrey;
         }
-        img {
-            width: 100%;
-            box-shadow: 3px 3px 10px $mdgrey;
-        }
         .right-margin {
             width: 80%;
+            box-shadow: 3px 3px 10px $mdgrey;
         }
     }
 }
