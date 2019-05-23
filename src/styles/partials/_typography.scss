@@ -134,6 +134,9 @@ p {
 .text--paragraph__spacing {
     padding: 10px 70px;
 }
+.align-left {
+    text-align: left;
+}
 
 // --RESPONSIVENESS--
 // @media (max-width: 930px) {
@@ -157,6 +160,9 @@ p {
         padding-right: 5%;
     }
     .text--paragraph__spacing {
+        padding: 10px 20px;
+    }
+    .values {
         padding: 10px 20px;
     }
 }

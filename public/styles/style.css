@@ -403,6 +403,10 @@ p {
   padding: 10px 70px;
 }
 
+.align-left {
+  text-align: left;
+}
+
 @media (max-width: 750px) {
   h1 {
     font-size: 60px;
@@ -432,6 +436,9 @@ p {
     padding-right: 5%;
   }
   .text--paragraph__spacing {
+    padding: 10px 20px;
+  }
+  .values {
     padding: 10px 20px;
   }
 }
@@ -983,7 +990,7 @@ a {
 }
 
 .content--container__about {
-  width: 65%;
+  width: 100%;
   padding: 5% 0;
   background-color: #f1f3f3;
   display: -webkit-box;
@@ -1001,6 +1008,37 @@ a {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.content--container__about .values {
+  padding: 10px 70px;
+}
+
+.content--container__about .values ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.content--container__about .values ul li {
+  width: 48%;
+  padding: 2% 0;
+}
+
+.content--container__about .values ul li h3 {
+  text-align: left;
 }
 
 .content--container__image.background {
@@ -1600,6 +1638,12 @@ footer .footer--container ul .footer--container__img {
   }
 }
 
+@media (max-width: 600px) {
+  .content--container__about .values {
+    padding: 10px 20px;
+  }
+}
+
 @media (max-width: 550px) {
   .portfolio--comms h3 {
     padding-top: 6%;
@@ -1660,6 +1704,12 @@ footer .footer--container ul .footer--container__img {
 
 @media (max-width: 400px) {
   .content--container__image.small a {
+    width: 100%;
+  }
+  .content--container__about .values {
+    padding: 10px 20px;
+  }
+  .content--container__about .values ul li {
     width: 100%;
   }
   .footer--container .text--paragraph__small {
