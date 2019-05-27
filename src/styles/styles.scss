@@ -90,6 +90,13 @@ a {
     padding: 5% 0 5% 5%;
     // border-top: 1px solid $mdblue;
 }
+.content--container__full-width {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 // BUTTON
 .content--container__button {
     display: flex;

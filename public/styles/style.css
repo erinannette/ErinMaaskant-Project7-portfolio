@@ -925,6 +925,22 @@ a {
   padding: 5% 0 5% 5%;
 }
 
+.content--container__full-width {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .content--container__button {
   display: -webkit-box;
   display: -ms-flexbox;

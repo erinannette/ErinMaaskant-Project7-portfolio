@@ -71,14 +71,14 @@ $(function () {
         $('.change--section').hide();
         $('.trs--section').hide();
 
-        $('.pubs--section').show();
+        $('.ux--section').show();
     });
     $('.change--button').click(function () {
         $('.change--button').addClass('active');
         $('.pubs--button').removeClass('active');
         $('.trs--button').removeClass('active');
 
-        $('.pubs--section').hide();
+        $('.ux--section').hide();
         $('.trs--section').hide();
 
         $('.change--section').show();
@@ -88,7 +88,7 @@ $(function () {
         $('.pubs--button').removeClass('active');
         $('.change--button').removeClass('active');
 
-        $('.pubs--section').hide();
+        $('.ux--section').hide();
         $('.change--section').hide();
 
         $('.trs--section').show();
