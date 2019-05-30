@@ -21,7 +21,7 @@ $(function () {
     $('.brown--button').click(function () {
         $('.cuppajoe--section').hide();
         $('.cyclewatch--section').hide();
-        $('.overwatch--section').hide();
+        $('.mayne--section').hide();
         $('.psdconv--section').hide();
 
         $('.brown--section').show();
@@ -30,7 +30,7 @@ $(function () {
     $('.cuppajoe--button').click(function () {
         $('.brown--section').hide();
         $('.cyclewatch--section').hide();
-        $('.overwatch--section').hide();
+        $('.mayne--section').hide();
         $('.psdconv--section').hide();
 
         $('.cuppajoe--section').show();
@@ -38,26 +38,18 @@ $(function () {
     $('.cyclewatch--button').click(function () {
         $('.brown--section').hide();
         $('.cuppajoe--section').hide();
-        $('.overwatch--section').hide();
+        $('.mayne--section').hide();
         $('.psdconv--section').hide();
 
         $('.cyclewatch--section').show();
     });
-    $('.overwatch--button').click(function () {
+    $('.mayne--button').click(function () {
         $('.brown--section').hide();
         $('.cuppajoe--section').hide();
         $('.cyclewatch--section').hide();
         $('.psdconv--section').hide();
 
-        $('.overwatch--section').show();
-    });
-    $('.psdconv--button').click(function () {
-        $('.brown--section').hide();
-        $('.cuppajoe--section').hide();
-        $('.cyclewatch--section').hide();
-        $('.overwatch--section').hide();
-
-        $('.psdconv--section').show();
+        $('.mayne--section').show();
     });
 });
 

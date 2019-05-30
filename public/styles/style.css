@@ -382,7 +382,6 @@ p {
 
 .white {
   color: white;
-  text-shadow: 1px 1px 1px darkslategray;
 }
 
 .text--paragraph__left {
@@ -394,7 +393,7 @@ p {
 }
 
 .text--paragraph__bottom {
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .text--paragraph__top {
@@ -926,7 +925,7 @@ a {
 }
 
 .content--container__full-width {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,16 +941,6 @@ a {
 }
 
 .content--container__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.content--container__button-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,6 +1306,16 @@ a {
   width: 80%;
   -webkit-box-shadow: 3px 3px 10px #5d5e5d;
   box-shadow: 3px 3px 10px #5d5e5d;
+}
+
+.content .content--comms__image-ux {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content .content--comms__image-ux-small {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .active-coll {
