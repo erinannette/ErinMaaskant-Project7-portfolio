@@ -167,7 +167,6 @@ input:checked {
                 a {
                     @include title-styles(21);
                     transition: all 0.3s ease-in-out;
-                    padding: 0 5%;
                     &:hover {
                         color: $mdblue;
                     }

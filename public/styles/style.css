@@ -685,7 +685,6 @@ input:checked {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  padding: 0 5%;
 }
 
 .top-bar .container--nav ul li a:hover {
