@@ -34,6 +34,9 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.content--container__halfwidth {
+    width: 50%;
+}
 .content--container.border {
     border: 1px solid $mdblue;
     box-shadow: 1px 1px 3px $ltblue;
@@ -45,6 +48,8 @@ a {
 .content--container.edges {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -61,7 +66,7 @@ a {
     padding-right: 10px;
 }
 .content--container__title {
-    width: 90%;
+    width: 100%;
     height: 50px;
     border: 1px solid $ltgrey;
     margin: 50px auto;
@@ -99,9 +104,11 @@ a {
 }
 // BUTTON
 .content--container__button {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    justify-content: center;
+    // margin: 0 auto;
 }
 .content--container__button.top-margin {
     margin-top: 3%;
@@ -128,6 +135,10 @@ a {
     .right-margin {
         width: 80%;
     }
+}
+.content--container__image.halfwidth {
+    width: 80%;
+    margin: 0 auto;
 }
 .grow { 
     transition: all .2s ease-in-out;
@@ -332,6 +343,31 @@ a {
         width: 40%;
         margin: 0 auto;
     }
+}
+.content--comms__image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    a {
+        width: 75%;
+        // box-shadow: 3px 3px 10px $mdgrey;
+    }
+    .right-margin {
+        width: 80%;
+        box-shadow: 3px 3px 10px $mdgrey;
+    }
+}
+.content--comms__image-ux {
+    width: 70%;
+    margin: 0 auto;
+}
+.content--comms__image-ux-small {
+    width: 40%;
+    margin: 0 auto;
 }
 .active-coll {
     border: 1px solid $mdgrey;

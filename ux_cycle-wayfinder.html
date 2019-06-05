@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/styles/style.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Cabin+Sketch:700|Unica+One"
+        rel="stylesheet">
+
+    <title>erin maaskant</title>
+</head>
+
+<body>
+    <!-- --- SLIDER NAV -- -->
+    <header>
+        <input type="checkbox" id="toggle" name="toggle">
+
+        <ul class="nav">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- -- SITE WRAPPER -- -->
+        <div class="site--wrapper" id="home">
+            <!-- -- TOP BAR -- -->
+            <section class="top-bar" id="top-bar">
+
+                <label for="toggle">
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+
+                <nav class="container--nav">
+                    <ul class="top-bar-nav">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+    </header>
+    <main>
+        <section class="portfolio--comms">
+            <div class="content--container edges">
+                <div class="content--container__title">
+                    <h2 class="h4-upper">
+                        Cycle Wayfinder</h2>
+                </div>
+                <h4 class="h4-upper">
+                    Defining the Problem</h4>
+                <p class="text--paragraph__bottom">
+                    For this project, we looked at various issues around transit in Toronto. I chose to look at the pain points around cycling as a mode of transport in Toronto. Through user interviews and survey responses from various cyclist communities in Toronto, I learned that the reasons for choosing a bike to get around were varied, but overall there were a few common reasons that surfaced: cycling is cheap, fast,
+                    fun, and good exercise.
+                </p>
+                <h4 class="h4-upper">Discovery Phase</h4>
+                <p class="text--paragraph__bottom">
+                    Through this same user research, I also found that the only common resource that cyclists in this city use is the printed cycling roadmap published by the city of Toronto. There was not a single website or application that was mentioned in all of the survey responses. Because biking apps are not well used in Toronto, I ran a design sprint to understand how we might change this.
+                </p>
+                <p class="text--paragraph__bottom">
+                    Safety on the road emerged as a major concern. Many people noted that they generally avoided streets without bike lanes, and they also noted that some of the greatest safety hazards while biking are cars parked in bike lanes and a general lack of respect for bike lanes by car drivers. Based on these findings, I focused on providing cyclists with the ability to quickly find a route that offered the level of safety they were comfortable with.
+                </p>
+                <h4 class="h4-upper">Prototype Phase</h4>
+                <p class="text--paragraph__bottom">
+                    My interview and survey results offered me a fantastic picture of the variety of people that I could now imagine might benefit from my app. Cyclists in Toronto are extremely varied. They range from 20 to 70 years old, with every level of fitness. Many people are cycling to commute to work, and are therefore looking for a safe route but also a route that will get them where they need to go relatively quickly. Toronto cyclists tend to be fairly safety-conscious, with a strong desire to reduce risks by wearing a helmet and sometimes high-visibility reflective clothing, using lights while riding at night, and choosing routes along quiet side streets and bike lanes first. From this information, I built three user personas to help me focus on my users’ needs, experiences, and behaviours.
+                </p>
+                <p class="text--paragraph__bottom">
+                    Mapping out a user journey helped to identify the key stages of the process, and then determine the most important “How Might We” questions.
+                </p>
+                <img class="text--paragraph__bottom content--comms__image-ux-small" src="public/assets/ux_map.jpg"
+                    alt="user journey map">
+                <p class="text--paragraph__bottom">
+                    From here, I moved into sketches of what these key screens might look like and how they would be structured. Before starting on low fidelity wireframes, I first used the crazy-8 technique to come up with as many different layout options as possible.
+                </p>
+                <img class="text--paragraph__bottom content--comms__image-ux" src="public/assets/ux_wireframes.jpg"
+                    alt="drawing of crazy 8 wireframe exercise on left, drawing of 3 detailed screens on right">
+                <p class="text--paragraph__bottom">
+                    After perfecting the designs for the three key screens identified in the user journey, I moved into Sketch and Illustrator to create high fidelity wireframes, and finally InVision for the first prototype.
+                </p>
+                <img class="text--paragraph__bottom content--comms__image-ux" src="public/assets/ux_prototype.jpg"
+                    alt="3 prototype screens shown on an iphone">
+                <p class="text--paragraph__bottom">
+                <div class="content--container__button text--paragraph__bottom">
+                    <a href="https://invis.io/FHRZQD84ZC3" class="view-site white" target=_blank>View Prototype</a>
+                </div>
+                <h4 class="h4-upper">The Final Outcome</h4>
+                <p class="text--paragraph__bottom">
+                    As a first iteration, I was keen to integrate some of the UI design for the search page from existing models such as Google Maps so as not to reinvent the wheel, but instead incorporate those actions that users are already so accustomed to using.
+                </p>
+                <p class="text--paragraph__bottom">
+                    One of the things that would have to be considered would be whether or not there is an API that the app would be able to access for accurate and up-to-date cycling infrastructure in Toronto.
+                </p>
+                <p class="text--paragraph__bottom">
+                    If I were to pursue the development of this app, I would like to explore why websites and apps are so underused by Toronto cyclists. More user research would uncover if this is simply because there is a lack of them, or if it is something else that is keeping people from seeking out online resources. I feel that this would be a key part of making this app successful; convincing cyclists to use an app will be an extra challenge if there is something blocking them from incorporating this type of resource into their daily lives and routines.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------------- -->
+    <footer>
+        <div class="footer--container">
+            <ul>
+                <li>
+                    <div class="footer--container__icon">
+                        <a href="https://twitter.com/Erin_Annette_M" target=_blank><i
+                                class="footer--icon fab fa-twitter"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer--container__icon">
+                        <a href="https://www.instagram.com/__erin_in_toronto__/" target=_blank><i
+                                class="footer--icon fab fa-instagram"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer--container__icon">
+                        <a href="https://www.linkedin.com/in/erin-maaskant-b5955370" target=_blank><i
+                                class="footer--icon fab fa-linkedin"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer--container__icon">
+                        <a href="https://medium.com/@erinannette" target=_blank><i
+                                class="footer--icon fab fa-medium-m"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer--container__icon right">
+                        <a href="https://github.com/erinannette" target=_blank><i
+                                class="footer--icon fab fa-github"></i></a>
+                    </div>
+                </li>
+        </div>
+    </footer>
+    <!-- ---------------- -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    
+    <script src="anime.min.js"></script>
+    
+    <script src="public/scripts/app.js"></script>
+</body>

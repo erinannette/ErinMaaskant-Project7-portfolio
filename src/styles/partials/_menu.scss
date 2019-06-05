@@ -161,6 +161,7 @@ input:checked {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            flex-wrap: wrap;
             li {
                 // padding: 0 15px;
                 a {
@@ -172,6 +173,31 @@ input:checked {
                     }
                 }
             }
+        }
+    }
+}
+.top-bar-secondary {
+    width: 100%;
+    max-width: 2600px;
+    height: 40px;
+	position: fixed;
+	top: 0px;
+    left: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    background-color: white;
+	border-bottom: 1px solid $ltgrey;
+    z-index: 30;
+    input[type="button"] {
+        background: none;
+        border: none;
+        @include title-styles(21);
+        transition: all 0.3s ease-in-out;
+        padding: 0 5%;
+        &:hover {
+            color: $mdblue;
         }
     }
 }
